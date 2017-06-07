@@ -1,0 +1,37 @@
+body {
+  width: 200px;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  display: block;
+  line-height: 36px;
+  text-decoration: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+a:hover {
+  background-color: #f2f2f2;
+}
+
+a:not(:last-of-type) {
+  border-bottom: 1px solid #cbcbcb;
+}
+
+span.version {
+  color: #969696;
+}
+
+img.ico {
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  margin: 0 10px;
+}

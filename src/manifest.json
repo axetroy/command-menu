@@ -1,0 +1,35 @@
+{
+  "name": "command menu",
+  "options_page": "options.html",
+  "background": {
+    "page": "background.html"
+  },
+  "page_action": {
+    "default_title": "Title",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "match_about_blank": true,
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content.bundle.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "web_accessible_resources": [
+    "app.bundle.js"
+  ],
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
